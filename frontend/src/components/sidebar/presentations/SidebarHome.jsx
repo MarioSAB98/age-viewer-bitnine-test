@@ -423,7 +423,7 @@ const SidebarHome = ({
           </>
         ) }
       </div>
-      <div className="sidebar-item-disconnect-outer">
+      <div className="sidebar-item-disconnect-outer ">
         <div className="form-group sidebar-item-disconnect">
           <div className="sidebar-item-disconnect-buttons">
             <button

@@ -20,7 +20,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { Row, Button } from 'react-bootstrap';
+import { Button, Col, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import EditorContainer from '../../contents/containers/Editor';
@@ -94,7 +94,7 @@ const DefaultTemplate = ({
 
   return (
     <div className="default-template">
-      { isOpen && <Modal /> }
+      {isOpen && <Modal />}
       <input
         type="radio"
         className="theme-switch"
@@ -111,23 +111,21 @@ const DefaultTemplate = ({
         checked={theme === 'dark'}
         readOnly
       />
-      <Row className="content-row">
-        <div>
-          <Button onClick={() => setOpen(true)}>
-            <FontAwesomeIcon icon={faBars} />
-          </Button>
-          <BuilderContainer open={open} setOpen={setOpen} finder={finder} />
-        </div>
-        <div className="editor-division wrapper-extension-padding">
-
+      <Col className="main-col">
+        <Row className="content-row">
+          <div>
+            <Button onClick={() => setOpen(true)}>
+              <FontAwesomeIcon icon={faBars} />
+            </Button>
+            <BuilderContainer open={open} setOpen={setOpen} finder={finder} />
+          </div>
           <EditorContainer />
+        </Row>
+        <div className="editor-division wrapper-extension-padding">
           <Sidebar />
           <Contents />
-
         </div>
-
-      </Row>
-
+      </Col>
     </div>
   );
 };

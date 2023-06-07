@@ -24,7 +24,7 @@ export const about = {
 };
 
 export const setting = {
-  theme: 'default',
+  theme: 'dark',
   maxNumOfFrames: 0,
   maxNumOfHistories: 0,
   maxDataOfGraph: 0,
