@@ -529,6 +529,12 @@ a.nav-link.active {
     font-size: 16px;
 }
 
+.Frame_Frame__i7IZ9 {
+    background-color: #1A237E !important;
+    color: white;
+    font-size: 16px;
+}
+
 .ant-col h3,
 .ant-col-6 h3 {
     color: white;
@@ -634,8 +640,8 @@ a.nav-link.active {
     color: #212121 !important;
 }
 
-.Frame_FrameHeaderText__3pIpM svg {
-    margin-left: 10px;
+.Frame_FrameHeaderText__1h1aJ svg {
+    margin-left: 10px !important;
 }
 
 .graph-tabpanel {
